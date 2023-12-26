@@ -11,7 +11,7 @@ export function ToastProvider({ children }) {
 	const [variant, setVariant] = React.useState('');
 	const handleEscape = React.useCallback(() => {
 		setToasts([]);
-	});
+	}, []);
 
 	function handleCreateToast(event) {
 		event.preventDefault();
